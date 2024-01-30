@@ -14,3 +14,7 @@ from BIOS vendor to IP address and so on.
 
 Next, I created a playbook which only showed a few facts, specifically the
 FQDN and the IP address.
+
+I would recommend that you play around with grabbing things like MAC addresses
+or ipv6 addresses or the like. Or maybe time/date information, like the day
+of the week on the system.

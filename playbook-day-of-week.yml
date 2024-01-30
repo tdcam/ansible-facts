@@ -1,0 +1,9 @@
+---
+- name: Only grab day of week on the remote system
+  hosts: all
+  tasks:
+    - name: grab the day of the week on the host
+      ansible.builtin.debug:
+        msg: >
+          The default IPv4 address of {{ ansible_facts.fqdn }}
+          is {{ ansible_facts.date_time.weekday }}

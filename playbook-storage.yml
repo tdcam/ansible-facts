@@ -1,0 +1,9 @@
+---
+- name: Only grab the UUIDs of the devices
+  hosts: all
+  tasks:
+    - name: grab the storage UUIDs
+      ansible.builtin.debug:
+        msg: >
+          The UUID of dm-0 on {{ ansible_facts.fqdn }}
+          is {{ ansible_facts['devices']['dm-0']['links']['uuids'] }}
