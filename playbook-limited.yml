@@ -1,0 +1,9 @@
+---
+- name: Only grab certain facts
+  hosts: all
+  tasks:
+    - name: grab network configurations only
+      ansible.builtin.debug:
+        msg: >
+          The default IPv4 address of {{ ansible_facts.fqdn }}
+          is {{ ansible_facts.default_ipv4.address }}
