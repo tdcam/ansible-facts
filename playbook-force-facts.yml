@@ -1,0 +1,7 @@
+---
+- name: Turn off fact gathering, but then force it anyway
+  hosts: all
+  gather_facts: false
+  tasks:
+    - name: Manually gather facts using ansible.builtin.setup
+      ansible.builtin.setup:
