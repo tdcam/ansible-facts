@@ -18,3 +18,6 @@ FQDN and the IP address.
 I would recommend that you play around with grabbing things like MAC addresses
 or ipv6 addresses or the like. Or maybe time/date information, like the day
 of the week on the system.
+
+There are a couple of yml files in here you can take a look at to get some
+examples of how it works.
